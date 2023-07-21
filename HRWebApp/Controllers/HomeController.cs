@@ -3,8 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using HRWebApp.Models;
 using BOL;
 using DAL;
-using System.Collections.Generic;
-using System.Globalization;
 
 namespace HRWebApp.Controllers;
 
@@ -44,10 +42,10 @@ public class HomeController : Controller
 
 
     [HttpPost]
-    public IActionResult Register(string id, string empName, string designation, string city, string department, string salary)
+    public IActionResult Register(string id, string empName, string designation, string city, string department, string salary, string joiningdate)
     {
 
-        Employee newEmployee = new Employee(int.Parse(id), empName, designation, city, Enum.Parse<Department>(department), int.Parse(salary));
+        Employee newEmployee = new Employee(int.Parse(id), empName, designation, city, Enum.Parse<Department>(department), int.Parse(salary), DateOnly.Parse(joiningdate));
         DBManager.InsertEmployee(newEmployee);
         return RedirectToAction("Employees");
     }
@@ -73,9 +71,9 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult UpdateEmployeeDetails(string id, string empname, string designation, string department, string city, string salary)
+    public IActionResult UpdateEmployeeDetails(string id, string empname, string designation, string department, string city, string salary, string joiningdate)
     {
-        Employee updateEmp = new Employee(int.Parse(id), empname, designation, city, Enum.Parse<Department>(department), int.Parse(salary));
+        Employee updateEmp = new Employee(int.Parse(id), empname, designation, city, Enum.Parse<Department>(department), int.Parse(salary), DateOnly.Parse(joiningdate));
 
         Console.WriteLine(updateEmp);
         DBManager.UpdateEmployee(updateEmp);

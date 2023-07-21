@@ -31,8 +31,9 @@ public class DBManager
                 string city = reader["city"].ToString();
                 Department department = Enum.Parse<Department>(reader["department"].ToString());
                 int salary = int.Parse(reader["salary"].ToString());
+                DateOnly joiningdate = DateOnly.FromDateTime(DateTime.Parse(reader["joiningdate"].ToString()));
 
-                Employee newEmployee = new Employee(id, empname, designation, city, department, salary);
+                Employee newEmployee = new Employee(id, empname, designation, city, department, salary, joiningdate);
 
                 empList.Add(newEmployee);
 
@@ -60,7 +61,7 @@ public class DBManager
             conn.Open();
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conn;
-            string query ="INSERT INTO EMPLOYEES VALUES ("+newEmployee.ID+",'"+newEmployee.EMPNAME+"','"+newEmployee.DESIGNATION+"','"+newEmployee.CITY+"','"+newEmployee.DEPARTMENT+"','"+newEmployee.SALARY+"')";
+            string query ="INSERT INTO EMPLOYEES VALUES ("+newEmployee.ID+",'"+newEmployee.EMPNAME+"','"+newEmployee.DESIGNATION+"','"+newEmployee.CITY+"','"+newEmployee.DEPARTMENT+"','"+newEmployee.SALARY+"','"+newEmployee.JOININGDATE.ToString("yyyy-MM-dd")+"')";
             cmd.CommandText = query;
             cmd.ExecuteNonQuery();
         }
@@ -122,8 +123,9 @@ public class DBManager
                 string city = reader["city"].ToString();
                 Department department = Enum.Parse<Department>(reader["department"].ToString());
                 int salary = int.Parse(reader["salary"].ToString());
+                DateOnly joiningdate = DateOnly.FromDateTime(DateTime.Parse(reader["joiningdate"].ToString()));
 
-                foundEmployee = new Employee(id, empname, designation, city, department, salary);
+                foundEmployee = new Employee(id, empname, designation, city, department, salary, joiningdate);
 
             }
 
@@ -151,7 +153,7 @@ public class DBManager
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conn;
 
-            string query = "UPDATE EMPLOYEES SET EMPNAME = '" + emp.EMPNAME + "', DESIGNATION = '" + emp.DESIGNATION + "', CITY = '" + emp.CITY + "', DEPARTMENT = '" + emp.DEPARTMENT + "', SALARY = '" + emp.SALARY + "' WHERE ID = " + emp.ID;
+            string query = "UPDATE EMPLOYEES SET EMPNAME = '" + emp.EMPNAME + "', DESIGNATION = '" + emp.DESIGNATION + "', CITY = '" + emp.CITY + "', DEPARTMENT = '" + emp.DEPARTMENT + "', SALARY = '" + emp.SALARY + "', JOININGDATE = '" + emp.JOININGDATE.ToString("yyyy-MM-dd") + "' WHERE ID = " + emp.ID;
 
             cmd.CommandText = query;
 
