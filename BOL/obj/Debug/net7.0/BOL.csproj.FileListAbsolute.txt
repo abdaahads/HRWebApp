@@ -1,0 +1,12 @@
+/Users/abdulahadsheikh/Projects/Assignment/BOL/bin/Debug/net7.0/BOL.deps.json
+/Users/abdulahadsheikh/Projects/Assignment/BOL/bin/Debug/net7.0/BOL.dll
+/Users/abdulahadsheikh/Projects/Assignment/BOL/bin/Debug/net7.0/BOL.pdb
+/Users/abdulahadsheikh/Projects/Assignment/BOL/obj/Debug/net7.0/BOL.csproj.AssemblyReference.cache
+/Users/abdulahadsheikh/Projects/Assignment/BOL/obj/Debug/net7.0/BOL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/abdulahadsheikh/Projects/Assignment/BOL/obj/Debug/net7.0/BOL.AssemblyInfoInputs.cache
+/Users/abdulahadsheikh/Projects/Assignment/BOL/obj/Debug/net7.0/BOL.AssemblyInfo.cs
+/Users/abdulahadsheikh/Projects/Assignment/BOL/obj/Debug/net7.0/BOL.csproj.CoreCompileInputs.cache
+/Users/abdulahadsheikh/Projects/Assignment/BOL/obj/Debug/net7.0/BOL.dll
+/Users/abdulahadsheikh/Projects/Assignment/BOL/obj/Debug/net7.0/refint/BOL.dll
+/Users/abdulahadsheikh/Projects/Assignment/BOL/obj/Debug/net7.0/BOL.pdb
+/Users/abdulahadsheikh/Projects/Assignment/BOL/obj/Debug/net7.0/ref/BOL.dll

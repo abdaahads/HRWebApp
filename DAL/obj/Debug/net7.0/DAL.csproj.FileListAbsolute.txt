@@ -1,0 +1,15 @@
+/Users/abdulahadsheikh/Projects/Assignment/DAL/bin/Debug/net7.0/DAL.deps.json
+/Users/abdulahadsheikh/Projects/Assignment/DAL/bin/Debug/net7.0/DAL.dll
+/Users/abdulahadsheikh/Projects/Assignment/DAL/bin/Debug/net7.0/DAL.pdb
+/Users/abdulahadsheikh/Projects/Assignment/DAL/bin/Debug/net7.0/BOL.dll
+/Users/abdulahadsheikh/Projects/Assignment/DAL/bin/Debug/net7.0/BOL.pdb
+/Users/abdulahadsheikh/Projects/Assignment/DAL/obj/Debug/net7.0/DAL.csproj.AssemblyReference.cache
+/Users/abdulahadsheikh/Projects/Assignment/DAL/obj/Debug/net7.0/DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/abdulahadsheikh/Projects/Assignment/DAL/obj/Debug/net7.0/DAL.AssemblyInfoInputs.cache
+/Users/abdulahadsheikh/Projects/Assignment/DAL/obj/Debug/net7.0/DAL.AssemblyInfo.cs
+/Users/abdulahadsheikh/Projects/Assignment/DAL/obj/Debug/net7.0/DAL.csproj.CoreCompileInputs.cache
+/Users/abdulahadsheikh/Projects/Assignment/DAL/obj/Debug/net7.0/DAL.csproj.CopyComplete
+/Users/abdulahadsheikh/Projects/Assignment/DAL/obj/Debug/net7.0/DAL.dll
+/Users/abdulahadsheikh/Projects/Assignment/DAL/obj/Debug/net7.0/refint/DAL.dll
+/Users/abdulahadsheikh/Projects/Assignment/DAL/obj/Debug/net7.0/DAL.pdb
+/Users/abdulahadsheikh/Projects/Assignment/DAL/obj/Debug/net7.0/ref/DAL.dll

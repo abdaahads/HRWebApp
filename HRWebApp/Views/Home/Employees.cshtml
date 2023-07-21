@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Employees";
+}
+
+<div class="text-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Desgination</th>
+                <th scope="col">City</th>
+                <th scope="col">Department</th>
+                <th scope="col">Joining Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                @foreach (var e in ViewBag.EmployeeList)
+                {
+                    <tr>
+                        <th scope="row">@e.ID</th>
+                        <td>@e.EMPNAME</td>
+                        <td>@e.DESIGNATION</td>
+                        <td>@e.CITY</td>
+                        <td>@e.DEPARTMENT</td>
+                        <td>@e.SALARY</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <div>
+        <form action="/Home/Register">
+            <button type="submit" class="btn btn-success" onclick="Register">Insert New Employee</button>
+        </form>
+        <br />
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="input-group w-auto">
+            <form action="/Home/UpdateDetails" method="get">
+                <input type="text"
+                       class="form-control"
+                       id="id"
+                       name="id"
+                       placeholder="Enter Employee Id"
+                       aria-label="Example input"
+                       aria-describedby="button-addon1" />
+                <button type="submit" class="btn btn-info" formaction="/Home/UpdateDetails" formmethod="get">Update Employee Details</button>
+                <button type="submit" class="btn btn-danger" formaction="/Home/Delete" formmethod="post">Delete Employee Details</button>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
