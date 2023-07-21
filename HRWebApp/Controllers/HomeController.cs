@@ -19,7 +19,6 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        Console.WriteLine(DateTime.Now.ToString("yyyy/MM/dd"));
         return View();
     }
 
@@ -56,7 +55,6 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Delete(int id)
     {
-        Console.WriteLine(id);
         DBManager.DeleteEmployeeById(id);
         return RedirectToAction("Employees");
     }
