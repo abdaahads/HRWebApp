@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  hrwebapp:
+    image: ${DOCKER_REGISTRY-}hrwebapp
+    build:
+      context: .
+      dockerfile: HRWebApp/Dockerfile

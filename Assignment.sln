@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOL", "BOL\BOL.csproj", "{B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{ED903DAE-CC9D-4DF5-A278-C0EF85A05157}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1C16EF39-A6EF-4D32-A99A-0700A7DF14F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{ED903DAE-CC9D-4DF5-A278-C0EF85A05157}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED903DAE-CC9D-4DF5-A278-C0EF85A05157}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED903DAE-CC9D-4DF5-A278-C0EF85A05157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C16EF39-A6EF-4D32-A99A-0700A7DF14F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C16EF39-A6EF-4D32-A99A-0700A7DF14F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C16EF39-A6EF-4D32-A99A-0700A7DF14F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C16EF39-A6EF-4D32-A99A-0700A7DF14F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
